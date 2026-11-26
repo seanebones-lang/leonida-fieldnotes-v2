@@ -1,0 +1,338 @@
+[
+ {
+  "evidence_note": "Structure is not in dispute, but naming is worth flagging once: every major outlet calls the story divisions 'chapters', not 'acts' — GameRant loosely calls Chapter 5 'the shortest act' in passing, but the Prologue-plus-five-chapters structure is unanimous.",
+  "free_grabs": [],
+  "id": "prologue",
+  "missions_note": "Every walkthrough lists a single mission, 'Prologue'. Outlets fold it into their counts differently: Dexerto's verified mission list (cross-checked by G2A against PC Gamer, GamesRadar+ and PowerPyx) counts it inside Chapter 1's 22 missions, as do KeenGamer and GameRant, while PowerPyx and GTA6Box list it separately before Chapter 1 begins.",
+  "name": "Prologue",
+  "order": 0,
+  "sources": [
+   {
+    "author": "KeenGamer",
+    "published_at": "2026-11-19",
+    "title": "GTA 6 Walkthrough: All Chapters and Story Missions in Order",
+    "url": "https://www.keengamer.com/articles/guides/gta-6-walkthrough-all-chapters-and-story-missions-in-order/"
+   },
+   {
+    "author": "PowerPyx",
+    "published_at": null,
+    "title": "GTA 6 Full Walkthrough - All Missions",
+    "url": "https://www.powerpyx.com/gta-6-full-walkthrough-all-missions/"
+   }
+  ],
+  "summary": "A short opening played as Lucia: a prison counseling session intercut with a flashback to the robbery that put her inside. It introduces Lucia before the story hands over to Jason in the Leonida Keys.",
+  "unlocks": [
+   "Introduction to Lucia as a playable character"
+  ],
+  "warnings": [
+   "Nothing to collect or protect here — the money and vehicle systems have not opened yet"
+  ]
+ },
+ {
+  "evidence_note": "High confidence on the wipe mechanics — KeenGamer, GuruGamer, RareThief and Exputer agree on what is lost and kept. Mission counts are now settled (22 here; 91 mandatory game-wide). The Recalibration-versus-Tourist-Trap trigger remains a live disagreement, and one detail is disputed: most guides tie BuckMe banking to the Buck Me mission, while some place banking access around Coming Home.",
+  "free_grabs": [
+   "Jason's Ganado, his starting personal car",
+   "$5,000 Rainy Day Fund lockbox hidden under Jason's floorboards (set up in Chapter 1, collected after the house burns)",
+   "Ultimate Edition weapons, free from the weapon locker at any Ammu-Nation"
+  ],
+  "id": "chapter-1",
+  "missions_note": "Dexerto's verified mission list counts 22 mandatory missions in this chapter, Prologue included, and 91 across the game (cross-checked by G2A against PC Gamer, GamesRadar+ and PowerPyx). The rival 93 total adds two optional Chapter 2 Billy missions (Thrillbillies; Twist Wrist, Smash, Grab); longer lists such as GTABase's 122 count banking sub-tasks and steps as separate entries, and PowerPyx adds optional/missable tasks (Get Shirley's Rum, Steal the Scooter) on top.",
+  "name": "Chapter 1: Just Like Paradise",
+  "order": 1,
+  "sources": [
+   {
+    "author": "KeenGamer",
+    "published_at": "2026-11-19",
+    "title": "GTA 6 Walkthrough: All Chapters and Story Missions in Order",
+    "url": "https://www.keengamer.com/articles/guides/gta-6-walkthrough-all-chapters-and-story-missions-in-order/"
+   },
+   {
+    "author": "KeenGamer",
+    "published_at": null,
+    "title": "GTA 6 Chapter 2 Lost Money: What Carries Over and How to Get It Back",
+    "url": "https://www.keengamer.com/articles/guides/gta-6-chapter-2-lost-money-what-carries-over-and-how-to-get-it-back/"
+   },
+   {
+    "author": "GuruGamer",
+    "published_at": null,
+    "title": "How to Keep Your Money When Chapter 1 Ends in GTA 6",
+    "url": "https://gurugamer.com/pc-console/how-to-keep-your-money-when-chapter-1-ends-in-gta-6-27606"
+   },
+   {
+    "author": "GameRant",
+    "published_at": null,
+    "title": "All Chapters & Main Story Missions in GTA 6",
+    "url": "https://gamerant.com/gta-6-main-story-missions-chapters-list/"
+   },
+   {
+    "author": "Dexerto",
+    "published_at": null,
+    "title": "GTA 6 Mission List — All Chapters and Missions",
+    "url": "https://www.dexerto.com/wikis/gta-6/mission-list/"
+   }
+  ],
+  "summary": "You play mostly as Jason around Key Lento in the Leonida Keys, running smuggling, rent-collection and repair jobs for Brian, Cal and Donnie. Lucia is released from prison partway through and the pair reunite; the chapter teaches driving, diving and the BuckMe banking system before a finale run that costs Jason his house.",
+  "unlocks": [
+   "BuckMe checking account and ATM deposits (mission: Buck Me)",
+   "Family Savings account in the BuckMe app (mission: Buck Me)",
+   "Floorboard cash stash at Jason's house",
+   "Ammu-Nation weapon purchases (mission: Gear Up)",
+   "Kenton's treasure dives (mission: Island Dreams)",
+   "Ultimate Edition Chapter 1 items: Dinka Enduro, Crest kayak, Ganado Retro Build",
+   "Lab Fees door codes: Moonstone Boutique hidden lab 0420 and Brian's lockup 7700 (Space4Games and code lists)"
+  ],
+  "warnings": [
+   "Tourist Trap is the point of no return: starting it wipes pocket cash, your BuckMe checking balance, the floor stash, Jason's house and ALL personal vehicles including Ultimate Edition cars and paid upgrades",
+   "Only Family Savings survives the wipe, and it caps at $5,000 in Chapter 1 — move $5,000 in and spend the rest on guns, clothes or tattoos, which all carry over",
+   "Do not pay for upgrades on Jason's car; it is lost at the chapter's end",
+   "Sources disagree on the exact trigger: KeenGamer names Tourist Trap, while GuruGamer and others warn pocket cash is already lost when Recalibration starts — prepare before Recalibration to be safe",
+   "Finish Shirley's missable errands and accept Lucia's balcony meditation (tied to the Positive Mental Attitude trophy) before the finale; both are unavailable afterwards",
+   "There is no mission replay, so keep a separate manual save from before the finale chain"
+  ]
+ },
+ {
+  "evidence_note": "Unlock timings for Moses, the Slim Jim and the free garage are consistent across every guide. Daily Driver pays $1,250 + $500 condition (Exputer, gta.guide), and the chapter's money gates — $5,000 earned, then $15,000 for 'Prepare for Vice City' before Checking Out — are confirmed by Space4Games and KeenGamer (the counters track earnings toward the goal, not your BuckMe balance). Open disputes: the Rainy Day Fund's earliest collection point (Chapter 2 vs mid-Chapter 3) and whether any cards are missable at the chapter's end.",
+  "free_grabs": [
+   "Your first registered personal car — the registration fee is waived once, and later registrations run $1,400 to $40,650",
+   "The Vapid Montagne XL parked behind Moses' shop, if you want his offered car",
+   "Port Gellhorn Station Garage (free, story)",
+   "$5,000 Rainy Day Fund from the lockbox in Jason's burned house — KeenGamer says Lucia can collect it in Chapter 2; RareThief says it becomes reachable partway through Chapter 3",
+   "Classic Car Collection exploration set (Ultimate Edition, Chapter 2)"
+  ],
+  "id": "chapter-2",
+  "missions_note": "Dexerto's verified list counts 11 mandatory missions here; Billy's Thrillbillies and Twist Wrist, Smash, Grab are optional extras, which explains the rival 93-mission whole-game lists. PowerPyx and FinalBoss count roughly 18 Chapter 2 entries because they also number background and setup tasks (Take Care of Jason, Overnight Charges, New Look, Painkiller Supplier, Prepare for Vice City).",
+  "name": "Chapter 2: Paradise Lost",
+  "order": 2,
+  "sources": [
+   {
+    "author": "KeenGamer",
+    "published_at": "2026-11-19",
+    "title": "GTA 6 Walkthrough: All Chapters and Story Missions in Order",
+    "url": "https://www.keengamer.com/articles/guides/gta-6-walkthrough-all-chapters-and-story-missions-in-order/"
+   },
+   {
+    "author": "gta6.house",
+    "published_at": null,
+    "title": "Moses in GTA 6: Port Gellhorn's car fence",
+    "url": "https://gta6.house/library/characters/moses"
+   },
+   {
+    "author": "thegta6map.com",
+    "published_at": null,
+    "title": "GTA 6 best cars to steal, register and sell to Moses",
+    "url": "https://thegta6map.com/articles/gta-6-best-cars-to-steal-register-sell"
+   },
+   {
+    "author": "GameSpot",
+    "published_at": null,
+    "title": "All Garage Locations And Prices In GTA 6",
+    "url": "https://www.gamespot.com/articles/all-garage-locations-and-prices-in-gta-6/"
+   },
+   {
+    "author": "Dexerto",
+    "published_at": null,
+    "title": "GTA 6 Mission List — All Chapters and Missions",
+    "url": "https://www.dexerto.com/wikis/gta-6/mission-list/"
+   }
+  ],
+  "summary": "Lucia takes the lead in Port Gellhorn, based at the Starlet Motel while Jason recovers from the Chapter 1 finale. She builds a life and a bankroll through local jobs — including the vehicle trade run by Moses — until trouble at the motel forces the pair to flee toward Vice City.",
+  "unlocks": [
+   "Vehicle registration at Moses' Watkins Auto Parts — and the first registration is free (mission: Moses)",
+   "Slim Jim lockpick tool (mission: Moses)",
+   "Upgraded WAiNK scanner showing sale value, registration cost and tracker status",
+   "Scooter Bros vehicle delivery app",
+   "Selling stolen cars to Moses",
+   "Port Gellhorn Station Garage, free (after Daily Driver)",
+   "Vice City Real Estate app for buying garages (after Daily Driver)",
+   "Pawn shops open — collectible cards can be sold from this chapter",
+   "Dunk as a fence for marked bills and goods (after Slam Dunk)",
+   "Free-roam character switching (after Coffee Break, per FinalBoss)",
+   "Paradise Garage, free for Ultimate Edition owners (Chapter 2)"
+  ],
+  "warnings": [
+   "Checking Out closes the chapter and permanently removes the motel as your home — finish Port Gellhorn business first",
+   "The chapter's $15,000 'Prepare for Vice City' target must be spendable cash: money in Family Savings cannot be spent, so build the total in pocket cash and checking",
+   "Moses refuses any car with a tracker and any car stolen close to his own shop",
+   "Fextralife reports two collectible cards (Delights Dancers, Los Santos Corkers) must be picked up before the end of Chapter 2; PowerPyx lists no missable cards — disputed, but grabbing motel-area cards before Checking Out costs nothing",
+   "Do the Pelican Valley crab outpost in this chapter, not Chapter 1 — its cash is a one-time pickup and Chapter 1 earnings are wiped"
+  ]
+ },
+ {
+  "evidence_note": "The Chapter 3 unlock cluster is the best-corroborated in the game — Key Cloner mission, Randy's list and the Credit Check unlocks agree across Polygon, KeenGamer, gta.guide and PowerPyx-derived money guides. Wish-list size is reconciled at 22 with the 16/18 subset counts recorded; the Snap Gun's exact hand-over point remains disputed in wording (first delivery vs the chain as a whole).",
+  "free_grabs": [
+   "$120,000 automatic story payout at the end of the chapter (PowerPyx, via GameMapa and NerdSnack)",
+   "Vanessa's pink Pfister Growler plus the Del Rio Boulevard Garage it sits in — garage keypad code 92665, from Boobie's laptop in Chapter 3",
+   "'55 Vapid Stanier (Ultimate Edition, Chapter 3 per KeenGamer)"
+  ],
+  "id": "chapter-3",
+  "missions_note": "Dexerto's verified list counts 26 mandatory missions (KeenGamer and GameRant agree; GameRant notes one further optional). FinalBoss numbers 31 Chapter 3 entries because it counts money-transfer sub-tasks such as 'Send Money to Lorena' as full missions. KeenGamer also lists the Zorrusso job under two names — 'Steal the Zorrusso for Randy' and 'Clonin' Keys, Makin' GS'.",
+  "name": "Chapter 3: Tits Ass Drug Money",
+  "order": 3,
+  "sources": [
+   {
+    "author": "KeenGamer",
+    "published_at": "2026-11-19",
+    "title": "GTA 6 Walkthrough: All Chapters and Story Missions in Order",
+    "url": "https://www.keengamer.com/articles/guides/gta-6-walkthrough-all-chapters-and-story-missions-in-order/"
+   },
+   {
+    "author": "gta.guide",
+    "published_at": null,
+    "title": "Key cloner in GTA 6: how to get and Randy's list",
+    "url": "https://gta.guide/gta-6/guides/key-cloner"
+   },
+   {
+    "author": "GameMapa (built mainly on PowerPyx)",
+    "published_at": "2026-11-18",
+    "title": "How to Make Money Fast in GTA 6: Best Methods by Chapter",
+    "url": "https://gamemapa.com/en/gta-6/guides/gta-6-how-to-make-money-fast/"
+   },
+   {
+    "author": "ShowGamer",
+    "published_at": null,
+    "title": "How to Get the Snap Gun in GTA 6 — Lockpicking and Stealth Robbery Guide",
+    "url": "https://showgamer.com/en/guides/7879-kak-poluchit-pistolet-otmychku-v-gta-6-vzlom-zamkov-i-ograblenie-magazinov"
+   },
+   {
+    "author": "Dexerto",
+    "published_at": null,
+    "title": "GTA 6 Mission List — All Chapters and Missions",
+    "url": "https://www.dexerto.com/wikis/gta-6/mission-list/"
+   }
+  ],
+  "summary": "Jason and Lucia arrive in Vice City and plug into its criminal economy, working for Dre'Quan, Boobie and Raul while assembling the crew, gear and knowledge for the Cartel Heist that closes the chapter. This is where the game's money systems — jewelry jobs, bank jobs, supercar exports — all switch on.",
+  "unlocks": [
+   "Pay 'n' Spray starts buying cars with a standard tracker (typically ~$2,500+, up to $4,000+ for a good car in perfect condition) and registering them",
+   "Key Cloner phone app (mission: Clonin' Keys, Makin' GS, after Crosstown Traffic)",
+   "Randy's Wish List of high-end cars (22 in total on the reconciled count: 20 on the initial board plus the '64 Mamba GT added by ¡Dale Mamba! and the Truffade Thrax finale; PowerPyx tracks 16 core targets for the Supply & Demand trophy, KeenGamer counts 18, gta.guide says 'about twenty')",
+   "Snap Gun lockpick tool (Yasmani's Jewelry Jobs — most guides say he hands it over after your first delivered piece)",
+   "Dye Pack Jammer (mission: Credit Check)",
+   "Small bank and payday loan robberies (after Credit Check)",
+   "Jewelry store robberies (Yasmani's Jewelry Jobs)",
+   "Yasmani as a fence paying premium rates for marked bills and jewelry",
+   "Storage facilities for stash bags",
+   "Shore Court Garage (Vintage Vice City Pack) and GTA+ Crosstown Garage, both Chapter 3 per Mobalytics"
+  ],
+  "warnings": [
+   "Race Against Yago is an hourglass, time-sensitive optional mission — do it the moment its marker appears or it can be missed",
+   "An advanced tracker reports your position to police whenever you drive slowly or stop; keep your speed up until you near the drop-off, where the signal drops",
+   "Guides disagree on advanced-tracker cars: gta.guide says they can only be sold and registered at Pay 'n' Spray after delivering the '64 Declasse Mamba GT in '¡Dale Mamba!', while others present Randy as the only outlet — do not assume you can keep one",
+   "Marked bills cannot be spent; they must go to a fence, and the Dye Pack Jammer from Credit Check is what lets you take them without the packs bursting",
+   "Snap Gun timing is disputed in wording: ShowGamer, ScreenRant and Sportskeeda say Yasmani rewards it after the first jewelry delivery, while some guides describe it as the reward for the Jewelry Jobs chain as a whole"
+  ]
+ },
+ {
+  "evidence_note": "Mission count and the Thompson Court unlock agree across sources. The vault unlock timing is now settled: PowerPyx's 100% guide places it at the end of Chapter 4 (optional mission 'That's Where The Money Is… (Wait at the Cafe)'); guides filing vaults under Chapter 5 use the chapter boundary differently.",
+  "free_grabs": [
+   "Thompson Court Garage (free, story, 2 vehicle spaces)",
+   "Squalo boat (Ultimate Edition — reported as a Chapter 4-window item, so claim it in this chapter rather than deferring)"
+  ],
+  "id": "chapter-4",
+  "missions_note": "KeenGamer and GameRant both count 25 main missions, opening with Ocean Beach. Dexerto's verified list ends the chapter with Sunset followed by a finale whose name it withholds as a spoiler; the name 'Starting From Zero' used by some guides does not appear in that verified list and is unverified. The optional list matters here: KeenGamer files both the time-sensitive 'This Is a Free Call From…' and the vault-unlocking 'That's Where The Money Is…' in this chapter.",
+  "name": "Chapter 4: Vice City, Baby",
+  "order": 4,
+  "sources": [
+   {
+    "author": "KeenGamer",
+    "published_at": "2026-11-19",
+    "title": "GTA 6 Walkthrough: All Chapters and Story Missions in Order",
+    "url": "https://www.keengamer.com/articles/guides/gta-6-walkthrough-all-chapters-and-story-missions-in-order/"
+   },
+   {
+    "author": "GameMapa (built mainly on PowerPyx)",
+    "published_at": "2026-11-18",
+    "title": "How to Make Money Fast in GTA 6: Best Methods by Chapter",
+    "url": "https://gamemapa.com/en/gta-6/guides/gta-6-how-to-make-money-fast/"
+   },
+   {
+    "author": "NerdSnack",
+    "published_at": null,
+    "title": "GTA 6 Money Guide: 9 Fastest Ways to Make Money by Chapter",
+    "url": "https://nerdsnack.com/gta-6-money-guide/"
+   },
+   {
+    "author": "Mobalytics",
+    "published_at": "2026-11-21",
+    "title": "GTA 6 Garage Guide: Locations and Prices",
+    "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-garages-locations-prices?ws-ngf7-6=cats,3061b0e0-df37-11f1-a3b9-fd45f21ffd31~600e6ef0-df37-11f1-a3b9-fd45f21ffd31~7329a360-df37-11f1-a3b9-fd45f21ffd31~968eeae0-df37-11f1-a3b9-fd45f21ffd31~a3c3ceb0-df37-11f1-a3b9-fd45f21ffd31~ad3c1fb0-df37-11f1-a3b9-fd45f21ffd31~ed46a310-df3b-11f1-a3b9-fd45f21ffd31~0ae704a0-df3c-11f1-a3b9-fd45f21ffd31~43dc0300-df3c-11f1-a3b9-fd45f21ffd31~4a87ed90-df3c-11f1-a3b9-fd45f21ffd31~51ee9ca0-df3c-11f1-a3b9-fd45f21ffd31~5df70e60-df3c-11f1-a3b9-fd45f21ffd31~63e2b630-df3c-11f1-a3b9-fd45f21ffd31~6988a270-df3c-11f1-a3b9-fd45f21ffd31~6e685880-df3c-11f1-a3b9-fd45f21ffd31~7e5d6dc0-df3c-11f1-a3b9-fd45f21ffd31~a3be1010-df3c-11f1-a3b9-fd45f21ffd31~a9f7fef0-df3c-11f1-a3b9-fd45f21ffd31~af3da2c0-df3c-11f1-a3b9-fd45f21ffd31~bd866790-df3c-11f1-a3b9-fd45f21ffd31~dd7d6350-df3c-11f1-a3b9-fd45f21ffd31~e3d90b00-df3c-11f1-a3b9-fd45f21ffd31~10b3bd50-df3d-11f1-a3b9-fd45f21ffd31~1b4d83e0-df3d-11f1-a3b9-fd45f21ffd31~26a23600-df3d-11f1-a3b9-fd45f21ffd31~2fe916c0-df3d-11f1-a3b9-fd45f21ffd31~358f0300-df3d-11f1-a3b9-fd45f21ffd31~3d7ae7a0-df3d-11f1-a3b9-fd45f21ffd31~446ed7b0-df3d-11f1-a3b9-fd45f21ffd31~7e80b7c0-df3d-11f1-a3b9-fd45f21ffd31~86b9aaf0-df3d-11f1-a3b9-fd45f21ffd31~98bae3e0-df3c-11f1-a3b9-fd45f21ffd31~9ffb6d50-df3c-11f1-a3b9-fd45f21ffd31~a53f1550-df3d-11f1-a3b9-fd45f21ffd31~ab52de90-df3d-11f1-a3b9-fd45f21ffd31~b28d7490-df3d-11f1-a3b9-fd45f21ffd31~bbecbf50-df3c-11f1-a3b9-fd45f21ffd31~c4c2b5d0-df3c-11f1-a3b9-fd45f21ffd31~cc549390-df3c-11f1-a3b9-fd45f21ffd31~d4a6b410-df3d-11f1-a3b9-fd45f21ffd31~e3d65670-df3c-11f1-a3b9-fd45f21ffd31~340623a0-df3e-11f1-a3b9-fd45f21ffd31~3ab2aa70-df3e-11f1-a3b9-fd45f21ffd31~401d1450-df3e-11f1-a3b9-fd45f21ffd31~64732430-e24e-11f1-9aa0-499682d0e4ea~0912b840-e3ba-11f1-86e6-2dfed8ed8acb"
+   },
+   {
+    "author": "Dexerto",
+    "published_at": null,
+    "title": "GTA 6 Mission List — All Chapters and Missions",
+    "url": "https://www.dexerto.com/wikis/gta-6/mission-list/"
+   }
+  ],
+  "summary": "The pair are established in Vice City and build toward the VCIA Takedown, an airport heist assembled through security work, surveillance, disguises and vehicle thefts for their contacts. The chapter closes with the heist's aftermath and the pair effectively starting over.",
+  "unlocks": [
+   "Large bank vault robberies via the optional mission That's Where The Money Is… (Wait at the Cafe) — confirmed as an end-of-Chapter 4 unlock by PowerPyx's 100% guide; some guides file vaults under Chapter 5 because the feature sits on the chapter boundary",
+   "Thompson Court Garage, free with 2 spaces (after Company Cars)",
+   "Pilot Pete delivery jobs paying $10,000–$20,000, Jason only (Chapter 4, per GTABase via HeistAtlas)",
+   "Yasmani's security-van tips for vault runs ($10,000, after robbing two Payday Loans stores)"
+  ],
+  "warnings": [
+   "Vaults unlock at the very end of this chapter via the optional cafe mission — despite some guides filing them under Chapter 5, plan to unlock them here, before the finale questline, not mid-chapter",
+   "Every vault run triggers an instant four-star wanted level the moment you enter",
+   "'This Is a Free Call From…' (Lucia) is a time-sensitive missable in this chapter",
+   "Do not rush into VCIA Takedown until the available preparation missions are done (KeenGamer)",
+   "Ultimate Edition items reported as chapter-windowed (Enduro and kayak in Chapter 1, Squalo here) may not be claimable after their chapter passes"
+  ]
+ },
+ {
+  "evidence_note": "The Cheetah's Chapter 5 / Pegassi Residences placement is confirmed by multiple post-launch lists; the unlock-mission name 'Honest Abe' rests on a single source (GTA6Wiki), with other guides tying the Pegassi garage itself to Operation Savage Glory. The chapter-window warning for earlier Ultimate items rests mainly on Dot Esports and gta.guide phrasing, so it is flagged rather than stated as settled.",
+  "free_grabs": [
+   "NE 15th Street Garage (free, story, 2 spaces)",
+   "Pegassi Residences Garage (free, story, 3 spaces)",
+   "'95 Grotti Cheetah, parked in the underground garage at Pegassi Residences, Tequesta Retreat (Ultimate Edition; it still carries a $32,750 registration cost and an advanced tracker per Exputer's scan data)"
+  ],
+  "id": "chapter-5",
+  "missions_note": "Seven missions in every source — Bird in the Hand, Taking Liberties, VC Baby, Doggie Bag, Operation Savage Glory, Protective Custody and a finale whose name Dexerto's verified list withholds as a spoiler. The finale name 'The End of the Road' used by some guides is unverified against that list.",
+  "name": "Chapter 5: Top of the World, Ma",
+  "order": 5,
+  "sources": [
+   {
+    "author": "KeenGamer",
+    "published_at": "2026-11-19",
+    "title": "GTA 6 Walkthrough: All Chapters and Story Missions in Order",
+    "url": "https://www.keengamer.com/articles/guides/gta-6-walkthrough-all-chapters-and-story-missions-in-order/"
+   },
+   {
+    "author": "Exputer",
+    "published_at": null,
+    "title": "'95 Grotti Cheetah",
+    "url": "https://gta.exputer.com/gta-6/vehicles/95-grotti-cheetah/"
+   },
+   {
+    "author": "bo3.gg",
+    "published_at": null,
+    "title": "GTA 6 Garages: All Locations, Prices & How to Buy",
+    "url": "https://bo3.gg/games/articles/all-gta-6-garage-locations"
+   },
+   {
+    "author": "Dot Esports",
+    "published_at": null,
+    "title": "GTA 6 Ultimate Edition & GTA+ bonuses: All items and unlock chapters",
+    "url": "https://dotesports.com/gta/guides/gta-6-ultimate-edition-gta-plus-bonuses"
+   },
+   {
+    "author": "Dexerto",
+    "published_at": null,
+    "title": "GTA 6 Mission List — All Chapters and Missions",
+    "url": "https://www.dexerto.com/wikis/gta-6/mission-list/"
+   }
+  ],
+  "summary": "The short final chapter: seven missions that run Jason and Lucia through one last sequence of jobs to the finale. Afterwards the game returns you to free roam, where collectibles, robberies, Strangers & Freaks and 100% completion work all remain available.",
+  "unlocks": [
+   "NE 15th Street Garage, free with 2 spaces (after Operation Savage Glory)",
+   "Pegassi Residences Garage, free with 3 spaces (after Operation Savage Glory)",
+   "'95 Grotti Cheetah Exploration task appears (Ultimate Edition; the unlock mission is named 'Honest Abe' by a single source, GTA6Wiki — other guides tie the Pegassi garage to Operation Savage Glory)",
+   "Cheat codes become usable — GTA6Info notes every cheat only works after the story is finished",
+   "Post-story bank vault farming at roughly $100,000–$200,000 per run (PowerPyx)"
+  ],
+  "warnings": [
+   "Keep a separate manual save before the finale sequence — with no mission replay, it is your only way back to an earlier point",
+   "Some Ultimate Edition items are reported as chapter-windowed (Enduro and kayak in Chapter 1, Squalo in Chapter 4); if you deferred claiming them, they may be gone by now",
+   "Garage prices are settled: the eight purchasable garages total $160,000, identical across VGC, GTABase, gta.guide and GTABites — older lists quoting up to $200,000 are superseded"
+  ]
+ }
+]
