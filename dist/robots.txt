@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gtavi.nexteleven.dev/sitemap.xml

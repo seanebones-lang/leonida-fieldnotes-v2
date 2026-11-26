@@ -1,0 +1,10 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const root=new URL('../',import.meta.url);
+const files=['index.html','app.js','premium.js','styles.css','data/community.json','data/guides.json','data/map-config.json','data/premium-codes.json'];
+const hash=createHash('sha256');
+for(const name of files)hash.update(await readFile(new URL('dist/'+name,root)));
+const id='leonida-fieldnotes-'+hash.digest('hex').slice(0,16);
+const template=await readFile(new URL('scripts/sw.template.js',root),'utf8');
+await writeFile(new URL('dist/sw.js',root),template.replace('__CACHE_ID__',id));
+console.log('Offline cache prepared:',id,'(notebook storage key preserved)');

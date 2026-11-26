@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#160a24">
+  <meta name="description" content="An unofficial GTA VI fan field guide: find anything in Leonida on our own custom-drawn map — or Rockstar's official map — with sourced guides for Easter eggs, hidden places, free vehicles, garages and money routes, plus a private discovery notebook.">
+  <link rel="canonical" href="https://gtavi.nexteleven.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Leonida Fieldnotes">
+  <meta property="og:title" content="Leonida Fieldnotes · GTA VI fan companion">
+  <meta property="og:description" content="Find anything in Leonida: our own custom-drawn map of GTA VI's state — day and night editions — plus Rockstar's official map, thousands of community landmarks, researched guides, garages, money routes and secrets, with confidence labels on everything.">
+  <meta property="og:url" content="https://gtavi.nexteleven.dev/">
+  <meta property="og:image" content="https://gtavi.nexteleven.dev/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Leonida Fieldnotes · GTA VI fan companion">
+  <meta name="twitter:description" content="An honest, sourced interactive map and field guide for GTA VI's Leonida — community landmarks, researched guides, garages, money routes and secrets.">
+  <meta name="twitter:image" content="https://gtavi.nexteleven.dev/assets/og-image.jpg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Leonida Fieldnotes","url":"https://gtavi.nexteleven.dev/","description":"An unofficial, sourced interactive map and field guide for GTA VI's Leonida, built from community data with confidence labels on every entry."}</script>
+  <title>Leonida Fieldnotes · GTA VI fan companion</title>
+  <link rel="icon" href="assets/fieldnotes.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/maplibre-gl.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="premium.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#explorer">Skip to explorer</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Leonida Fieldnotes home">
+      <img src="assets/fieldnotes.svg" width="38" height="38" alt="">
+      <span><strong>FIELDNOTES<span class="brand-period">.</span></strong><small>LEONIDA EDITION · GTA VI FAN COMPANION</small></span>
+    </a>
+    <nav aria-label="Explore views" class="main-nav">
+      <button class="nav-button active" data-view="explore">Explore</button>
+      <button class="nav-button" data-view="secrets">Secrets &amp; hidden places</button>
+      <button class="nav-button" data-view="notebook">My notebook <span id="notebook-count">0</span></button>
+      <a class="nav-button" href="guides/index.html">Guides</a>
+      <a class="nav-button" href="acts/index.html">Chapters</a>
+      <a class="nav-button" href="tips/index.html">Tips</a>
+    </nav>
+    <button class="quiet-button premium-open">Premium</button>
+    <button class="quiet-button about-open"><span class="desktop-label">About this atlas</span><span class="mobile-label">About</span><span class="info-symbol" aria-hidden="true">i</span></button>
+  </header>
+
+  <section class="find-bar" aria-label="Find places on the map">
+    <div class="search-wrap"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search all places, areas, Easter eggs…" autocomplete="off" aria-label="Search all places and areas"><kbd>/</kbd></label><div id="search-results" class="search-results" hidden></div></div>
+    <label class="area-picker"><span class="sr-only">Choose an area</span><select id="area-select" aria-label="Choose an area"><option value="">All areas</option></select></label>
+    <button id="show-results" class="primary-button" aria-controls="results">Places</button>
+    <button id="clear-search" class="secondary-button">Show all</button>
+  </section>
+  <main class="workspace" id="explorer">
+    <aside class="sidebar" aria-label="Places and filters">
+      <div class="sidebar-top">
+        <div class="edition-row"><span class="eyebrow" id="view-eyebrow">ALL AREAS OPEN</span><button id="mobile-close" class="icon-button mobile-label" aria-label="Back to map">Map ×</button></div>
+        <h1 id="view-title">Find a place.</h1>
+        <p class="intro" id="view-description">Search above, choose an area, or tap a pin. Everything is available from the start.</p>
+        <nav class="mobile-view-nav" aria-label="Mobile explore views"><button data-view="explore" class="active">All places</button><button data-view="secrets">Secrets</button><button data-view="notebook">Notebook</button></nav>
+        <div class="filter-row" aria-label="Location categories">
+          <button class="filter-chip active" data-filter="all" aria-pressed="true">Everything</button>
+          <button class="filter-chip" data-filter="easter" aria-pressed="false">Easter eggs</button>
+          <button class="filter-chip" data-filter="hidden" aria-pressed="false">Hidden places</button>
+          <button class="filter-chip" data-filter="vehicle" aria-pressed="false">Free vehicles</button>
+          <button class="filter-chip" data-filter="garage" aria-pressed="false">Garages</button>
+          <button class="filter-chip" data-filter="money" aria-pressed="false">Money</button>
+          <button class="filter-chip" data-filter="collectible" aria-pressed="false">Collectibles</button>
+          <button class="filter-chip" data-filter="service" aria-pressed="false">Services</button>
+          <button class="filter-chip" data-filter="hotel" aria-pressed="false">Hotels</button>
+          <button class="filter-chip" data-filter="residential" aria-pressed="false">Homes</button>
+          <button class="filter-chip" data-filter="retail" aria-pressed="false">Retail</button>
+          <button class="filter-chip" data-filter="restaurant" aria-pressed="false">Food &amp; drink</button>
+          <button class="filter-chip" data-filter="transportation" aria-pressed="false">Transport</button>
+          <button class="filter-chip" data-filter="industrial" aria-pressed="false">Industrial</button>
+          <button class="filter-chip" data-filter="government" aria-pressed="false">Government</button>
+          <button class="filter-chip" data-filter="leisure" aria-pressed="false">Leisure</button>
+          <button class="filter-chip" data-filter="natural" aria-pressed="false">Nature</button>
+          <button class="filter-chip" data-filter="utilities" aria-pressed="false">Utilities</button>
+          <button class="filter-chip" data-filter="office" aria-pressed="false">Offices</button>
+          <button class="filter-chip" data-filter="public" aria-pressed="false">Public</button>
+          <button class="filter-chip" data-filter="landmark" aria-pressed="false">Landmarks</button>
+          <button class="filter-chip" data-filter="personal" aria-pressed="false">My pins</button>
+        </div>
+        <details id="guide-progress" class="progress-box"></details>
+        <div class="trail-row" aria-label="Curated trails">
+          <button id="trail-eggs" class="secondary-button">✦ Easter Egg Trail</button>
+          <button id="trail-cars" class="secondary-button">▣ Free Car Run</button>
+        </div>
+      </div>
+      <div id="storage-warning" class="storage-warning" hidden></div>
+      <div class="results-heading"><span id="result-count" role="status">Loading the atlas…</span><button id="fit-results" class="text-button">Fit pins</button></div>
+      <div id="results" class="results" aria-label="Location results"></div>
+      <div class="sidebar-bottom">
+        <button id="add-pin" class="primary-button">＋ Add a private pin</button>
+        <div class="bottom-tools"><button id="data-open" class="quiet-button">⇅ Backup &amp; restore</button><button id="more-open" class="quiet-button">Filters</button></div>
+        <div class="local-status"><span class="saved-light" aria-hidden="true"></span><span id="save-status">Saved in this browser · no account</span></div>
+        <p class="map-credit">Fieldnotes custom map · drawn by NextEleven · Landmark data © GTADB.ORG contributors, CC BY 4.0</p>
+      </div>
+    </aside>
+
+    <section class="map-shell" aria-label="Interactive community map">
+      <div id="map" tabindex="0" aria-label="Map of community-reconstructed Leonida. Drag to pan; use plus and minus to zoom."></div>
+      <div class="map-topline"><button id="mobile-browse" class="map-button mobile-label">☰ Browse places <span id="mobile-count"></span></button><span class="map-label">LEONIDA, DRAWN BY FIELDNOTES <span>Our own custom basemap · pins sit exactly where the data puts them</span></span></div>
+      <div class="base-switch" role="group" aria-label="Basemap">
+        <button data-base="fieldnotes" class="active" aria-pressed="true">Our map</button>
+        <button data-base="official" aria-pressed="false">Official</button>
+        <button data-base="community" aria-pressed="false">Community</button>
+      </div>
+      <div class="map-tools" aria-label="Map controls"><button id="pins-toggle" class="map-button pins-button" title="Show or hide pin types" aria-label="Show or hide pin types" aria-expanded="false">⚑<span class="pins-button-label">Pins</span><span id="pins-off-count" class="pins-badge" hidden></span></button><button id="fit-map" class="map-button" title="Fit map" aria-label="Fit the whole map">⌖</button><button id="toggle-style" class="map-button" title="Toggle map appearance" aria-label="Toggle day and night map">◐</button><button id="fullscreen" class="map-button" title="Full screen" aria-label="Toggle full screen">⛶</button></div>
+      <div id="pins-panel" class="pins-panel" hidden>
+        <div class="pins-panel-head"><strong>Show pins</strong><span><button id="pins-all" class="text-button">All</button><button id="pins-none" class="text-button">None</button><button id="pins-close" class="text-button">Done</button></span></div>
+        <p class="pins-hint">Tap a name to show only that type of pin. Use a switch to turn a type on or off. Your choices are saved on this device.</p>
+        <div id="pins-list" class="pins-list"></div>
+      </div>
+      <div class="map-caption"><span class="compass" aria-hidden="true">N<span>↑</span></span><span>LEONIDA, THROUGH A DIFFERENT LENS.<small>Community placements are not verified in-game coordinates.</small></span></div>
+      <div id="discovery-card" class="discovery-card" hidden><span class="eyebrow">OFF THE BEATEN PATH</span><h2>There’s more out there.</h2><p>Browse sourced Easter eggs and hidden-place guides. All discoveries are visible from the start.</p><button id="discover-secrets" class="primary-button">Explore the secret guides</button></div>
+      <section id="details" class="details" aria-label="Selected place" hidden></section>
+      <div id="pin-instruction" class="pin-instruction" role="status" hidden>Tap the map to place a private pin.<button id="cancel-pin">Cancel</button></div>
+      <div id="plan-bar" class="plan-bar" hidden><span id="plan-count"></span><span>Planning line, not road directions</span><button id="clear-plan" class="text-button">Clear</button></div>
+      <div id="map-error" class="map-error" hidden><strong>The map couldn’t load.</strong><p>Your saved notes are still here. Reload to try again.</p><button onclick="location.reload()" class="primary-button">Reload</button></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <dialog id="about-dialog" class="dialog"><form method="dialog"><button class="dialog-close icon-button" aria-label="Close about">×</button></form><span class="eyebrow">INDEPENDENT. UNOFFICIAL. FREE.</span><h2>How to use Fieldnotes</h2><ol class="quick-start"><li>Search a place or choose an area at the top.</li><li>Tap a result or a map pin to open its details. Numbered circles zoom into groups of pins.</li><li>Star places, mark them found or save a private note. Use “Show all” to reset the view.</li></ol><p>Fieldnotes is an independent fan companion for Grand Theft Auto VI. It is not affiliated with or endorsed by Rockstar Games or Take-Two.</p><div class="about-note"><strong>Three basemaps — read each honestly.</strong><p><strong>Our map (the default)</strong> is drawn by NextEleven: our own cartography of Leonida, vectorised from the community reconstruction and checked town-by-town against Rockstar’s official printed map. Pins are native to this map — they sit exactly where the source data puts them. It comes in day and night editions; the ◐ button swaps them.</p><p><strong>Official</strong> is Rockstar’s own printed map of Leonida, shown under fan use (© Rockstar Games; we will remove it on request). Pins reach it through a measured transform fitted on 58 cross-checked places — expect the right neighbourhood, not the exact street corner.</p><p><strong>Community</strong> is the original YANIS / gta6map pre-release reconstruction, kept for its street detail.</p><p>On every basemap, the landmark pins come from the current GTADB community dataset — names are current, positions are community-reported and approximate. A sourced guide without reliable coordinates is deliberately left unpinned.</p><p>Map data © GTADB.ORG contributors, CC BY 4.0 — GTA VI Landmarks Data (CC BY 4.0) — https://map.gtadb.org. Community reconstruction: YANIS / gta6map community, publisher-declared public domain.</p></div><p>“Official” means Rockstar names the region. “Confirmed” means multiple published launch guides agree on a discovery. “Reported” means one linked guide describes it. None of these means we personally verified its location in-game.</p><p>Your notes, found places and private pins stay in this browser. There is no cloud sync. Export a backup before clearing browser data or changing devices.</p><div id="credits"></div><p class="muted">Designed &amp; built by Baxter McDonnell · NextEleven. Grand Theft Auto and related names belong to their respective owners. The community basemap source declares its own tiles public domain; the landmark dataset is GTADB.ORG’s, used under CC BY 4.0. Rockstar’s official map artwork is © Rockstar Games, shown here under fan use only — not affiliated, not endorsed, and removable on request.</p></dialog>
+
+  <dialog id="data-dialog" class="dialog"><form method="dialog"><button class="dialog-close icon-button" aria-label="Close backup and restore">×</button></form><span class="eyebrow">YOUR NOTEBOOK, YOUR COPY</span><h2>Take your discoveries with you.</h2><p>Export a JSON backup of your found places, favorites, notes, private pins and planning list. Keep it somewhere safe.</p><button id="export-backup" class="primary-button">Download my backup</button><hr><h3>Restore a backup</h3><p>Import merges your discoveries. If notes conflict, your existing note is kept. Nothing is uploaded to a server.</p><input id="import-backup" type="file" accept=".json,application/json" aria-label="Choose a Fieldnotes backup"><p id="import-result" role="status"></p><button id="export-raw" class="quiet-button" hidden>Download unreadable saved data</button><hr><button id="reset-data" class="danger-button">Clear this browser’s notebook</button></dialog>
+
+  <dialog id="more-dialog" class="dialog"><form method="dialog"><button class="dialog-close icon-button" aria-label="Close more filters">×</button></form><span class="eyebrow">MAKE IT YOUR MAP</span><h2>Explore your way.</h2><label class="setting"><input type="checkbox" id="hide-found"><span><strong>Hide found places</strong><small>Keep completed discoveries out of the results.</small></span></label><label class="setting"><input type="checkbox" id="favorites-only"><span><strong>Favorites only</strong><small>Show only starred places.</small></span></label><p class="muted">All available community points are included, even unnamed ones. Secrets with no reliable coordinates remain in the list, with their source guides. “Fit pins” fits mapped results only.</p></dialog>
+
+  <dialog id="pin-dialog" class="dialog"><form id="pin-form"><button type="button" class="dialog-close icon-button" id="close-pin" aria-label="Cancel private pin">×</button><span class="eyebrow">ONLY IN YOUR NOTEBOOK</span><h2>A place worth remembering.</h2><label class="field">Name<input id="pin-name" maxlength="100" required placeholder="Your own discovery"></label><label class="field">Note<textarea id="pin-note" rows="3" maxlength="5000" placeholder="What will bring you back?"></textarea></label><p class="muted">This is your own placement on a community map, not a verified public location.</p><button class="primary-button" type="submit">Save private pin</button></form></dialog>
+  <dialog id="premium-dialog" class="dialog"><form method="dialog"><button class="dialog-close icon-button" aria-label="Close premium">×</button></form><span class="eyebrow">SUPPORT THE FIELDWORK</span><h2>Fieldnotes Premium</h2><div id="premium-status"></div><div id="premium-buy"></div><form id="premium-form"><label class="field">Unlock code<input id="premium-code" autocomplete="off" spellcheck="false" placeholder="LFN-XXXXX-XXXXX"></label><button class="primary-button" type="submit">Unlock Premium</button><p id="premium-result" role="status"></p></form><div id="premium-dashboard"></div><style>.premium-row{margin:10px 0}.premium-row-label{font-weight:600}.premium-row-count{float:right;color:#c4b0d9;font-size:14px}.premium-bar{clear:both;height:8px;background:#2c1847;border-radius:99px;margin-top:4px;overflow:hidden}.premium-bar-fill{height:100%;background:linear-gradient(90deg,#ff7ad9,#ffb25e);border-radius:99px}</style></dialog>
+
+  <noscript><div class="no-script">This interactive atlas needs JavaScript. No private data has been uploaded.</div></noscript>
+</body>
+</html>
